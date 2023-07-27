@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+    color: #ffff;
+    font-family: 'REM', sans-serif;
+}
+.summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+}
+.logo{
+    width: 30em;
+}
+
+.introduction{
+    text-align: center;
+    padding: 3em;
+    margin-bottom: 2em;
+}
+
+.teamOffice{
+    width: 70em;
+    padding: 1em;
+}
