@@ -23,3 +23,26 @@ body{
     width: 70em;
     padding: 1em;
 }
+.display{
+    display: none;
+}
+#listDivEpisodesDisplay{
+display: none;
+}
+.titleSaison
+{
+    font-size: 4em;
+    margin: 1em;
+}
+.numbEpisode{
+    padding: 2em;
+    font-size: 1.5em;
+    list-style: none;
+}
+.titleEpisode{
+    text-decoration: underline;
+}
+.welcomeBackButton{
+   
+    padding: 1em;
+}

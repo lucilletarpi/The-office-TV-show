@@ -1,3 +1,15 @@
+<!-- A faire 
+1. rendre dynamique l'affichage des pages saisons 
+    - afficher les épisodes par saisons avec des photo et ou des photos 
+    - trouver une façon pour traduire le résumé de chaque épisodes
+2. faire la page accueil 
+3. faire la page histoire -->
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -7,7 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=REM:wght@600&display=swap" rel="stylesheet">
-    
+    <script src="/data.js"></script>
     <link rel="stylesheet" href="styles.css">
     <title>The Office TV Show</title>
 </head>
@@ -18,7 +30,7 @@
         
         <img src="/img/logo.webp" class="logo" alt="Logo de la série The Office">
     </header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav">
   <div class="container-fluid">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -31,15 +43,15 @@
           </a>
           <div id="navList">
           <ul class="dropdown-menu" >
-            <li><a class="dropdown-item" href="/seasons/seasons1.html">Saison 1 </a></li>
-            <li><a class="dropdown-item" href="#">Saison 2</a></li>
-            <li><a class="dropdown-item" href="#">Saison 3</a></li>
-            <li><a class="dropdown-item" href="#">Saison 4</a></li>
-            <li><a class="dropdown-item" href="#">Saison 5</a></li>
-            <li><a class="dropdown-item" href="#">Saison 6</a></li>
-            <li><a class="dropdown-item" href="#">Saison 7</a></li>
-            <li><a class="dropdown-item" href="#">Saison 8</a></li>
-            <li><a class="dropdown-item" href="#">Saison 9</a></li>
+            <li class="dropdown-item" id="1">1</li>
+            <li class="dropdown-item" id="2">2</li>
+            <li class="dropdown-item" id="3">3</li>
+            <li class="dropdown-item" id="4">4</li>
+            <li class="dropdown-item" id="5">5</li>
+            <li class="dropdown-item" id="6">6</li>
+            <li class="dropdown-item" id="7">7</li>
+            <li class="dropdown-item" id="8">8</li>
+            <li class="dropdown-item" id="9">9</li>
           </ul>
           </div>
         </li>
@@ -58,6 +70,13 @@
         <p>The Office, est une sitcom américaine créée par Ricky Gervais et Stephen Merchant diffusée sur le réseau NBC entre le 24 mars 2005 et le 16 mai 2013. <br> Elle s'étend sur neuf saisons et 201 épisodes d'une durée allant d'environ vingt-deux minutes à plus de quarante minutes pour certains épisodes.</p>
         <img src="/img/office.jpg" class="teamOffice" alt="Les acteurs de The office">
     </div>
+    <div id="listDivEpisodesDisplay">
+  <p class="titleSaison">Saison<p>
+    <ul class="listEpisodes">
+        
+    </ul>
+</div>
+
 </body>
 </html>
 
