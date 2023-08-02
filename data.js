@@ -24,19 +24,12 @@ function listOffice() {
 				.then((response) => response.json())
 				.then((response) => {
 					console.log(response);
+
 					divEpisodeSeason1.innerHTML = " ";
 					divEpisodeSeason1.id = "listEpisodes";
 					divPresentation.className = "display";
-					titleSaison.innerHTML = "Saison: " + " " + valeur;
-					//creation of the welcome back button
-					const welcomeButton = document.createElement("button");
+					titleSaison.innerHTML = "Season: " + " " + valeur;
 
-					welcomeButton.innerHTML = "Accueil";
-					const welcomeLink = document.createElement("a");
-					welcomeLink.className = "welcomeBackButton";
-					welcomeLink.href = "index.html";
-					welcomeButton.appendChild(welcomeLink);
-					nav.appendChild(welcomeButton);
 					for (let i = 0; i < response.episodes.length; i++) {
 						console.log(divEpisodeSeason1);
 						//LI creation for episode number
@@ -44,18 +37,19 @@ function listOffice() {
 						numListEpisode.innerHTML =
 							"Episode" + " " + response.episodes[i].episode_number;
 						numListEpisode.className = "numbEpisode";
+						numListEpisode.id = response.episodes[i].episode_number;
 						//
 						// h2 creation for episode title
 						const titleEpisode = document.createElement("h2");
 						titleEpisode.innerHTML =
-							"Titre de l'épisode" + ": " + response.episodes[i].name;
+							"Episode Title" + ": " + response.episodes[i].name;
 						titleEpisode.className = "titleEpisode";
 						//
 						// p creation for episode summary
 						const summaryEpisode = document.createElement("p");
 						summaryEpisode.className = "summaryEpisode";
 						summaryEpisode.innerHTML =
-							"Résumé" + " : " + response.episodes[i].overview;
+							"Summary" + " : " + response.episodes[i].overview;
 						//
 						divEpisodeSeason1.appendChild(numListEpisode);
 						numListEpisode.appendChild(titleEpisode);
@@ -66,7 +60,6 @@ function listOffice() {
 		});
 	});
 }
-
 document.addEventListener("DOMContentLoaded", function () {
 	listOffice();
 });

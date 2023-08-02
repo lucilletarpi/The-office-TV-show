@@ -41,8 +41,11 @@ display: none;
 }
 .titleEpisode{
     text-decoration: underline;
+    padding: 1em;
 }
 .welcomeBackButton{
-   
     padding: 1em;
+}
+footer{
+    text-align: center ;
 }

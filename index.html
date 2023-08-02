@@ -1,15 +1,3 @@
-<!-- A faire 
-1. rendre dynamique l'affichage des pages saisons 
-    - afficher les épisodes par saisons avec des photo et ou des photos 
-    - trouver une façon pour traduire le résumé de chaque épisodes
-2. faire la page accueil 
-3. faire la page histoire -->
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -28,7 +16,7 @@
     <header class="summary">
         <h1>The Office <br>TV show</h1>
         
-        <img src="/img/logo.webp" class="logo" alt="Logo de la série The Office">
+        <img src="/img/logo.webp" class="logo" alt="The Office series logo">
     </header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav">
   <div class="container-fluid">
@@ -37,9 +25,12 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-            Saisons
+            Seasons
           </a>
           <div id="navList">
           <ul class="dropdown-menu" >
@@ -55,28 +46,25 @@
           </ul>
           </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Acteurs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Histoire</a>
-        </li>
         </ul>
      
     </div>
   </div>
 </nav>
     <div class="introduction">
-        <p>The Office, est une sitcom américaine créée par Ricky Gervais et Stephen Merchant diffusée sur le réseau NBC entre le 24 mars 2005 et le 16 mai 2013. <br> Elle s'étend sur neuf saisons et 201 épisodes d'une durée allant d'environ vingt-deux minutes à plus de quarante minutes pour certains épisodes.</p>
-        <img src="/img/office.jpg" class="teamOffice" alt="Les acteurs de The office">
+        <p>The Office, is an American sitcom created by Ricky Gervais and Stephen Merchant broadcast on the NBC network between March 24, 2005 and May 16, 2013. <br> It spans nine seasons and 201 episodes lasting from around twenty-two minutes to over forty minutes for some episodes.</p>
+        <img src="/img/office.jpg" class="teamOffice" alt="The actors of The office">
     </div>
     <div id="listDivEpisodesDisplay">
   <p class="titleSaison">Saison<p>
-    <ul class="listEpisodes">
-        
+    <ul class="listEpisodes"> 
     </ul>
-</div>
-
+    </div>
+<footer>
+  <div>
+    <p>Currently available on <a href="https://www.netflix.com/fr/"><img src="img/netflix_logo_icon_170919.png" alt="logo Netflix"></a></p>
+  </div>
+</footer>
 </body>
 </html>
 
